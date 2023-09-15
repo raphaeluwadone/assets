@@ -1,0 +1,78 @@
+
+.active {
+  font-weight: 700;
+}
+
+.active .active-border {
+    color: #E1003A !important;
+    border-left: 4px #E1003A solid !important;
+}
+
+.active:first-child {
+  color: #E1003A !important;
+}
+
+.active-border p{
+  color: inherit;
+}
+
+.req-tab {
+    width: 423px;
+    height: 155px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    padding: 20px;
+    transition: all 0.2s ease-out;
+}
+
+.req-tab:hover {
+  background: rgb(252, 223, 223);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+  
+  .section__padding {
+    padding: 0 8rem;
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .section__padding {
+      padding: 0 2rem;
+    }
+  }
+
+  .high-index {
+    z-index: 1000000 !important;
+  }
+
+  .multi-select {
+    width: 380px;
+  }
+
+  .file_label {
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+    background-color: #E1003A,
+  }
+
+  .file_label:hover {
+    background-color: #b6002d;
+  }

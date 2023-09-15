@@ -1,0 +1,157 @@
+.asset__banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px !important;
+}
+
+.asset__banner-content {
+    width: 350px;
+}
+
+.asset__banner-content h1 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #444;
+}
+
+.asset__banner-content h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.btn__get-started {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: #DC143C;
+    color: #fff;
+}
+
+.btn__login {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #DC143C;
+    background: transparent;
+    border: 2px solid #DC143C;
+}
+
+.asset__banner-image{
+    margin: 0 15px;
+    margin-top: 30px;
+}
+
+.asset__banner-image img {
+    max-width: 440px;
+    height: 310.3px;
+}
+
+.banner_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+  @media screen and (max-width: 480px) {
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .asset__banner-section {
+
+        width: 100%;
+    }
+
+    .asset__banner-content {
+        text-align: center;
+        padding: 0;
+    }
+
+    .asset__banner-content h1 {
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    .asset__banner-content h5 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .asset__banner-image img {
+        max-width: 340px;
+        height: 310.3px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .asset__banner-image img {
+        max-width: 340px;
+        height: 310.3px;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+
+    .asset__banner-section {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .banner_btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_btn .btn__login{ margin-top: 20px;}
+
+    .asset__banner-content {
+        width: 300px;
+    }
+
+    .asset__banner-content h5 {
+       font-size: 1rem;
+       text-align: center;
+    }
+
+    .asset__banner-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+     }
+  }
+
+  @media screen and (max-width: 890px) {
+    .asset__banner-image img {
+        max-width: 240px;
+        height: 310.3px;
+    }
+
+    .asset__banner-content {
+        margin-bottom: 20px;
+    }
+  }

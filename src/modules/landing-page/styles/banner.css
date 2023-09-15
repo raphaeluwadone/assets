@@ -1,0 +1,64 @@
+.asset__banner-section {
+    display: flex;
+}
+
+.asset__banner-content {
+    padding: 90px 15px 0 15px;
+}
+
+.asset__banner-content h1 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #444;
+}
+
+.asset__banner-content h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.btn__get-started {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: #DC143C;
+    color: #fff;
+}
+
+.btn__login {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #DC143C;
+    background: transparent;
+    border: 2px solid #DC143C;
+    margin-left: 25px;
+}
+
+.asset__banner-image{
+    margin: 0 15px;
+    margin-top: 30px;
+}
+
+.asset__banner-image img {
+    max-width: 540px;
+    height: 410.3px;
+}

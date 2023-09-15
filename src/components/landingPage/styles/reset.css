@@ -1,0 +1,80 @@
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 100vh;
+}
+
+.container {
+    width: 45%;
+    transition: 0.1s ease-in-out;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #F08080;
+    transition: 0.5s;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+
+.container:hover:after {
+    width: 100%;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 34px;
+    color: #535074;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.container hr{
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.input__section {
+    padding: 15px;
+}
+
+.form__group {
+    display: flex;
+}
+
+.form__button {
+    cursor: pointer;
+}
+
+.footer__links {
+    text-align: center;
+    color: #1bb1dc;
+}
+
+.footer__links p {
+    transition: 0.5s;
+    margin: 5px 0;
+}
+
+.footer__links p:hover {
+    color: #DC143C;
+}
+
+.form__control:focus {
+    outline: none !important;
+    border-color: #F08080 !important;
+}

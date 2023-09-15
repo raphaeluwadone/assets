@@ -1,0 +1,69 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.auth__section {
+    width: 45%;
+    /*box-shadow: 0 3px 0px 0 rgb(65 62 102 / 8%);*/
+    transition: 0.1s ease-in-out;
+}
+
+.auth__section:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 0px 0 rgb(65 62 102 / 8%);
+    border-top: 8px solid #DC143C;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.auth__section h3{
+    text-align: center;
+    font-size: 34px;
+    color: #535074;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.auth__section hr{
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.input__section {
+    padding: 15px;
+}
+
+.form__group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form__group-terms {
+    display: flex;
+    padding: 0 30px;
+}
+
+.save__user {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.login__link {
+    text-align: center;
+}
+
+.form__button {
+    cursor: pointer;
+}
+
+.forget__password{
+    transition: 0.1 ease-in;
+}
+
+.forget__password:hover {
+    color: #DC143C;
+}

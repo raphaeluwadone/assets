@@ -1,0 +1,26 @@
+.asset__faq {
+    padding: 80px 13rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.asset__faq-text h3{
+    font-size: 36px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.asset__faq-text p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #535074;
+    width: 50%;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}

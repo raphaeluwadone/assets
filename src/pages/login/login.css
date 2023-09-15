@@ -1,0 +1,120 @@
+.asset__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 730px;
+    max-height: 425px;
+    margin: 0 auto;
+    padding: 36px 0;
+    cursor: pointer;
+}
+
+.asset__login:hover {
+    box-shadow: 0 20px 35px 0 rgb(0 0 0 / 8%);
+    border-top: 5px solid #DC143C;
+}
+
+.asset__login-header {
+    text-align: center;
+}
+
+.asset__login-header h3 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #535074;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.login_section {
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group button {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 24px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #DC143C;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    min-width: 689.6px;
+    border: none;
+    cursor: pointer;
+}
+
+.detail__recovery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 80px;
+}
+
+.register {
+    margin-bottom: 1rem;
+}
+
+.register input {
+    margin-left: 5px;
+}
+
+.register label {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 90%;
+    color: #444;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.forget__password a {
+    color: #1bb1dc;
+    transition: 0.5s;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.asset__signup p {
+    margin: 5px;
+    text-align: center;
+}
+
+.asset__signup a {
+    color: #1bb1dc;
+    transition: 0.5s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}

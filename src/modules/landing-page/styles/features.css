@@ -1,0 +1,38 @@
+.asset__features {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: rgb(255, 252, 252);
+}
+
+.feature__container {
+    padding: 0 15px;
+}
+
+.features__header {
+    text-align: center;
+}
+
+.features__header h3 {
+    font-size: 36px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: var(--font-family);
+    margin-bottom: 20px;
+}
+
+.features__header p {
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #535074;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.asset__feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
