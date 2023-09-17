@@ -187,26 +187,26 @@ const Print = () => {
 
   // http://api.asset.bz/PDFdownloader.aspx?filename=IdcarddispatchCard
 
-  const ds = [
-    {
-      PortalName: "Delta State University",
-      LogoURL: "http://api.asset.bz/images/delsu_logo.png",
-      Barcode: "http://api.asset.bz/images/AssetImages/5/Barcode/78376.PNG",
-      Firstname: "Favour Toluwalase",
-      Lastname: "AJAGBE",
-      CodeValue: "FOS/18/19/255200",
-      Type: 201,
-      HolderSignature: "http://api.asset.bz/images",
-      AuthorizedSignature: "http://api.asset.bz/images/delsu_signature.png",
-      Address: "P.M.B. 1, Abraka",
-      Phone: "08035466066",
-      Passport: "http://api.asset.bz/images/Users/5/Passport/78175.PNG",
-      Department: "BIOCHEMISTRY",
-      Hostname: "http://api.asset.bz/images",
-      Branch: "Abraka",
-      PortalId: 5,
-    },
-  ];
+  // const ds = [
+  //   {
+  //     PortalName: "Delta State University",
+  //     LogoURL: "http://api.asset.bz/images/delsu_logo.png",
+  //     Barcode: "http://api.asset.bz/images/AssetImages/5/Barcode/78376.PNG",
+  //     Firstname: "Favour Toluwalase",
+  //     Lastname: "AJAGBE",
+  //     CodeValue: "FOS/18/19/255200",
+  //     Type: 201,
+  //     HolderSignature: "http://api.asset.bz/images",
+  //     AuthorizedSignature: "http://api.asset.bz/images/delsu_signature.png",
+  //     Address: "P.M.B. 1, Abraka",
+  //     Phone: "08035466066",
+  //     Passport: "http://api.asset.bz/images/Users/5/Passport/78175.PNG",
+  //     Department: "BIOCHEMISTRY",
+  //     Hostname: "http://api.asset.bz/images",
+  //     Branch: "Abraka",
+  //     PortalId: 5,
+  //   },
+  // ];
 
   const getPdf = async (tagNum: number) => {
     const newCardInfo = cardInfo.map((card) => {
@@ -232,7 +232,7 @@ const Print = () => {
         fileName = response.headers.get("filename") as unknown as string;
         response.json();
       })
-      .then((data) => {
+      .then(() => {
         const form = document.createElement("form");
         form.setAttribute("method", "post");
         form.setAttribute("action", "http://api.asset.bz/PDFdownloader.aspx");
@@ -245,47 +245,6 @@ const Print = () => {
         form.submit();
       });
   };
-
-  
-  $.support.cors = true;
-  var ds = [];
-
-  for (var i = 0; i < TagIds.length; i++) {
-    ds.push({
-      Id: TagIds[i].Id,
-      IsPrinted: true,
-      PortalId: $scope.user.PortalId,
-      BranchId: TagIds[i].BranchId,
-      CreatedBy: $scope.user.Id,
-    });
-  }
-  AjaxOptions.data = JSON.stringify({ iListrfidInfo: ds });
-  AjaxOptions.url = $scope.serviceURL + "/RFIDTagsByRFIDTagIdPrintedUpdate";
-  $.ajax(AjaxOptions)
-    .done(function (results) {
-      if (results.d > 0) {
-        $scope.MessageAlert(
-          "ID successfully printed. <br/>Batch no is <b>" +
-            results.d +
-            "</b>",
-          "success",
-          false
-        ); //false means dont autoclose
-        $("#myDownloaderFrame").attr("src", "");
-        console.log(results);
-        ApplyViewChanges($scope);
-        //$scope.ListAssignedIDs($('#selItem').val());
-        $scope.FetchTrimmedData();
-      } else {
-        $scope.MessageAlert(
-          "An error occurred, you will have to download again to log the success of your printing.",
-          "error"
-        );
-        console.log(results);
-      }
-    })
-    .fail(AjaxFail);
-};
 
   return (
     <Layout>
